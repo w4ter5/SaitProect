@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Корзина</h1>
+        <nav>
+            <a href="catalog.html">Каталог</a>
+            <a href="index.html">Главная</a>
+        </nav>
+    </header>
+    <main>
+        <div id="cart-container">
+            <h2>Ваши товары</h2>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <p>Итоговая стоимость: <span id="total-price">0</span> ₽</p>
+            </div>
+            <h2>Оформление заказа</h2>
+            <form id="order-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" required>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" required>
+                <label for="address">Адрес:</label>
+                <textarea id="address" required></textarea>
+                <button type="button" onclick="saveOrder()">Сохранить заказ</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Магазин автозапчастей</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
